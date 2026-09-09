@@ -3,11 +3,11 @@ import { ArrowRight, ExternalLink } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "DevStride: Software Engineering Learning Platform",
-        description: "A responsive online learning platform for Software Engineering, featuring course enrollment, progress tracking, Firebase authentication, and interactive user experiences.",
+        title: "TechLine: Online Learning Platform",
+        description: "A full-stack online learning platform featuring Firebase authentication, course browsing, enrollment, role-based access control, and dynamic course management.",
         image: "/projects/Project1.png",
-        tags: ["React", "Tailwind CSS", "Firebase"],
-        demoUrl: "https://dev-stride-89da6.web.app/",
+        tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Tailwind CSS", "Vercel", "Railway"],
+        demoUrl: "https://tech-line-online-learning-platform.vercel.app",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const projects = [
         description: "A full-stack event management platform built with Next.js, featuring secure authentication, event management, responsive dashboards, and MongoDB integration.",
         image: "/projects/Project2.png",
         tags: ["Next.js","React", "Tailwind CSS", "MongoDB", "NextAuth"],
-        demoUrl: "https://event-management-nextjs-olive.vercel.app/",
+        demoUrl: "https://event-management-nextjs-olive.vercel.app",
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ const projects = [
         description: "A skill-sharing platform connecting learners and instructors through skill discovery, user authentication, and a responsive React-based interface.",
         image: "/projects/Project3.png",
         tags: ["React", "Vite", "Tailwind CSS", "Firebase", "JavaScript"],
-        demoUrl: "https://skillswap-firebase-auth-c71c8.web.app/",
+        demoUrl: "https://skillswap-firebase-auth-c71c8.web.app",
     },
 ];
 
