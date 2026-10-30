@@ -114,10 +114,10 @@ export const ContactSection = () => {
                             <a href="https://www.linkedin.com/in/rafimahmudul" target="_blank">
                                 <BsLinkedin className="text-[#0A66C2] "/>
                             </a>
-                            <a href="https://www.instagram.com/raa.fuu" target="_blank">
+                            <a href="https://www.instagram.com/mahmudul.hasan.rafi" target="_blank">
                                 <BsInstagram className="text-[#d92561] "/>
                             </a>
-                            <a href="https://www.facebook.com/rafimahmudul96" target="_blank">
+                            <a href="https://www.facebook.com/rafimahmudul75" target="_blank">
                                 <BsFacebook className="text-[#1877F2] "/>
                             </a>
                         </div>
