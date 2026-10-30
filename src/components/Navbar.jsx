@@ -10,7 +10,7 @@ const navItems = [
     { name: "Contact", href: "#contact" },
 ];
 
-export const Navbar = () => {
+export const Navbar = ({ onMenuToggle }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -56,7 +56,13 @@ export const Navbar = () => {
             {/* mobile nav */}
 
             <button 
-                onClick={() => setIsMenuOpen((prev) => !prev)}
+                onClick={() => {
+                    setIsMenuOpen((prev) => {
+                        const next = !prev;
+                        onMenuToggle(next);
+                        return next;
+                    });
+                }}
                 className="md:hidden p-2 text-foreground z-50"
                 aria-label={isMenuOpen ? "Close Menu" : "Open"}
             >
@@ -78,7 +84,10 @@ export const Navbar = () => {
                           key={key} 
                           href={item.href}
                           className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                          onClick={() => setIsMenuOpen(false)}
+                          oonClick={() => {
+                            setIsMenuOpen(false);
+                            onMenuToggle(false);
+                        }}
                         >
                           {item.name}
                         </a>                   

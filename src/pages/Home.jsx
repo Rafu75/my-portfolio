@@ -17,6 +17,7 @@ export const Home = () => {
   const portraitTargetRef = useRef(null);
 
   const [positions, setPositions] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const { scrollY } = useScroll();
 
@@ -80,7 +81,7 @@ export const Home = () => {
     <div className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
       <ThemeToggle />
       <StarBackground />
-      <Navbar />
+      <Navbar onMenuToggle={setIsMenuOpen}/>
 
       <main>
         <HeroSection portraitStartRef={portraitStartRef} />
@@ -95,8 +96,15 @@ export const Home = () => {
       {positions && (
         <motion.div
         initial={{ opacity: 0, scale: 0.85 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+        animate={{
+          opacity: isMenuOpen ? 0 : 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 0.3,
+          delay: isMenuOpen ? 0 : 0.3,
+          ease: "easeOut",
+        }}
         className="pointer-events-none absolute left-0 top-0 z-50 overflow-hidden rounded-full border-2 border-primary/50 shadow-[0_0_30px_rgba(139,92,246,0.25)]"
         style={{
             width: positions.size,
