@@ -16,7 +16,7 @@ export const HeroSection = ({ portraitStartRef }) => {
                 Hi, I'm
               </p>
 
-              <h1 className="whitespace-nowrap text-2xl font-bold tracking-tight opacity-0 animate-fade-in-delay-1 sm:text-4xl lg:text-5xl">
+              <h1 className="text-2xl font-bold tracking-tight opacity-0 animate-fade-in-delay-1 sm:text-4xl lg:text-5xl">
                 <span className="text-primary">Mahmudul</span>{" "}
                 <span className="text-gradient">Hasan</span>{" "}
                 <span className="text-primary">Rafi</span>

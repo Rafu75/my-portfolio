@@ -34,8 +34,8 @@ export const ThemeToggle = () => {
             onClick={toggleTheme}
             aria-label="Toggle dark and light mode"
             className={cn(
-            "fixed top-5 left-5 right-auto z-[100] p-2 rounded-full transition-colors duration-300",
-            "sm:left-auto sm:right-5",
+            "fixed top-5 right-16 z-[100] p-2 rounded-full transition-colors duration-300",
+            "sm:right-5",
             "focus:outline-hidden"
         )}
         >
